@@ -18,6 +18,17 @@ Do not infer protected traits or private contact details. Do not invent graduati
 A class-of-2029 or later signal qualifies; otherwise use Needs verification.
 Look for future-entrepreneur signals including builders, operators, domain experts,
 connectors/storytellers, high-impact niches, and early work from high school or community projects.
+Use Ronan Curley as the clearest positive archetype, with Carter Lim, Mason Lewis,
+and Nina Le Van as additional positive examples. Require observable personal ownership:
+the person initiated or materially drove a problem, project, organization, or venture;
+their own contribution is clear; and there is evidence of iteration, user learning,
+cross-functional execution, or a credible reason to keep pursuing the problem.
+Do not over-rank generic club membership, titles without execution, competition
+participation without ownership, or technical keywords without a problem/user context.
+Search broadly across business, design, marketing, agriculture, life sciences, health,
+education, sports, creative work, community projects, engineering, software, and hardware.
+An existing product is not required, but label early potential as `emerging signal` and
+explain the underlying ownership or domain insight rather than claiming founder experience.
 Return JSON with a top-level `candidates` array. Each item must contain:
 name, grad_signal, major_area, public_signal, fit_angle, cutoff_status,
 source_type, source_url, roles, evidence.
