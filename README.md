@@ -2,7 +2,7 @@
 
 A GitHub-based research agent for finding promising Sigma Eta Pi prospects at Cal Poly SLO.
 
-It searches public web sources, extracts evidence about future-entrepreneur signals, applies the December 2028+ graduation cutoff, ranks candidates using a version-controlled preference profile, deduplicates against an existing Google Sheet, and can append approved-format rows to the `Web Prospects` tab.
+It searches public web sources and recent indexed activity, extracts evidence about future-entrepreneur signals, applies the December 2028+ graduation cutoff, ranks candidates using a version-controlled preference profile, deduplicates against an existing Google Sheet, and can append the five best new rows to the `Web Prospects` tab.
 
 ## What it is
 
@@ -64,7 +64,7 @@ The run writes a local `data/latest_candidates.json` artifact and prints a conci
 
 ## GitHub Actions
 
-The workflow can be started manually or scheduled weekly. Add these repository secrets:
+The workflow can be started manually or scheduled approximately every three days. Each run searches recent indexed activity and appends up to five new candidates. Add these repository secrets:
 
 - `OPENAI_API_KEY`
 - `SERPAPI_API_KEY`
