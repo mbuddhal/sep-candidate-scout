@@ -21,8 +21,17 @@
     "Carter Lim",
     "Mason Lewis",
     "Ronan Curley",
-    "Nina Le Van",
-    "Vincent L.",
-    "Avari Brocker"
+    "Nina Le Van"
+  ],
+  "secondary_examples": ["Vincent L.", "Avari Brocker"],
+  "clearest_example": "Ronan Curley",
+  "diversity_dimensions": [
+    "business", "design", "marketing", "agriculture", "life sciences", "health", "education", "sports", "creative work", "community projects", "engineering", "software", "hardware"
+  ],
+  "must_have_ownership_signals": [
+    "self-initiated problem or idea", "personal contribution is clear", "persistence or iteration", "customer or user learning", "collaboration across skills", "credible reason to keep pursuing the problem"
+  ],
+  "deprioritize_patterns": [
+    "generic club membership", "title without evidence of execution", "competition participation without personal ownership", "technical project with no problem or user context", "likes or reactions presented as original work"
   ]
 }
