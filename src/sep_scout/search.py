@@ -6,14 +6,19 @@ from typing import Any
 import requests
 
 
-def search_public_web(query: str, api_key: str | None = None, limit: int = 10) -> list[dict[str, str]]:
+def search_public_web(query: str, api_key: str | None = None, limit: int = 10, recent_days: int | None = None) -> list[dict[str, str]]:
     """Search indexed public pages through SerpApi; never logs into a site."""
     key = api_key or os.getenv("SERPAPI_API_KEY")
     if not key:
         raise RuntimeError("SERPAPI_API_KEY is required for live search")
+    params = {"engine": "google", "q": query, "api_key": key, "num": limit}
+    if recent_days is not None and recent_days <= 7:
+        params["tbs"] = "qdr:w"
+    elif recent_days is not None and recent_days <= 31:
+        params["tbs"] = "qdr:m"
     response = requests.get(
         "https://serpapi.com/search.json",
-        params={"engine": "google", "q": query, "api_key": key, "num": limit},
+        params=params,
         timeout=30,
     )
     response.raise_for_status()
