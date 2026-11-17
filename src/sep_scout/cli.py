@@ -24,7 +24,7 @@ def main() -> None:
     results: list[dict[str, str]] = []
     per_query = max(1, int(__import__("os").getenv("SEARCH_RESULTS_PER_QUERY", "10")))
     for query in config["queries"]:
-        results.extend(search_public_web(query, limit=per_query))
+        results.extend(search_public_web(query, limit=per_query, recent_days=config.get("recent_days")))
     candidates = extract_candidates(results[: args.limit * 4], config)[: args.limit]
     Path("data").mkdir(exist_ok=True)
     Path("data/latest_candidates.json").write_text(json.dumps([c.to_dict() for c in candidates], indent=2, ensure_ascii=False))
