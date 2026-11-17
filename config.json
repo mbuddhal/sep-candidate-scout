@@ -1,0 +1,25 @@
+{
+  "school": "California Polytechnic State University, San Luis Obispo",
+  "school_terms": ["Cal Poly SLO", "Cal Poly San Luis Obispo", "California Polytechnic State University-San Luis Obispo"],
+  "minimum_grad_year": 2029,
+  "sheet_name": "Web Prospects",
+  "queries": [
+    "site:calpoly.edu Cal Poly student startup pitch prototype",
+    "site:cie.calpoly.edu Cal Poly student founder pitch prototype",
+    "site:calpoly.edu Cal Poly student hackathon project 2026",
+    "site:calpoly.edu Cal Poly student research robotics climate health accessibility",
+    "site:linkedin.com/in Cal Poly 2025 2029 founder startup builder",
+    "site:linkedin.com/in Cal Poly 2026 2030 operator entrepreneurship project"
+  ],
+  "high_impact_niches": [
+    "climate", "energy", "health", "accessibility", "biotech", "aerospace", "robotics", "AI safety", "cybersecurity", "education", "sustainability", "food systems", "civic technology"
+  ],
+  "liked_examples": [
+    "Carter Lim",
+    "Mason Lewis",
+    "Ronan Curley",
+    "Nina Le Van",
+    "Vincent L.",
+    "Avari Brocker"
+  ]
+}
