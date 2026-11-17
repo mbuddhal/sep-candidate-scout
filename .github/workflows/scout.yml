@@ -3,7 +3,7 @@ name: SEP candidate scout
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 16 * * 1"
+    - cron: "0 16 */3 * *"
 
 jobs:
   scout:
@@ -16,7 +16,7 @@ jobs:
         with:
           python-version: "3.11"
       - run: pip install -r requirements.txt
-      - run: python -m sep_scout --write-sheet --limit 20
+      - run: python -m sep_scout --write-sheet --limit 5
         env:
           PYTHONPATH: src
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
