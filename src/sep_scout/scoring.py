@@ -28,6 +28,11 @@ def score_candidate(candidate: Candidate, config: dict) -> Candidate:
         "operator": (15, ["organized", "recruited", "fundraised", "sponsorship", "president", "lead", "managed", "sales"]),
         "impact": (15, list(map(str.lower, config.get("high_impact_niches", [])))),
         "cross_functional": (10, ["product", "design", "marketing", "pitch", "customer", "community"]),
+        "ownership": (15, [
+            "founded", "co-founded", "initiated", "started", "launched", "owned",
+            "personal contribution", "led development", "ran", "created", "iterated",
+            "user feedback", "customer discovery", "validated", "self-directed",
+        ]),
     }
     for points, terms in keyword_groups.values():
         if any(term in signal for term in terms):
