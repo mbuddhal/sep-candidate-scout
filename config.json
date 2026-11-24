@@ -18,13 +18,23 @@
     "climate", "energy", "health", "accessibility", "biotech", "aerospace", "robotics", "AI safety", "cybersecurity", "education", "sustainability", "food systems", "civic technology"
   ],
   "liked_examples": [
-    "Carter Lim",
-    "Mason Lewis",
     "Ronan Curley",
-    "Nina Le Van"
+    "Nina Le Van",
+    "Vincent L.",
+    "Ahmed Ufuk Serce",
+    "Arin Johar",
+    "Alysen Serran",
+    "Sean Le"
   ],
-  "secondary_examples": ["Vincent L.", "Avari Brocker"],
+  "secondary_examples": [],
   "clearest_example": "Ronan Curley",
+  "removed_examples": [
+    "Carter Lim", "Mason Lewis", "Avari Brocker", "Aswath Subramanian",
+    "Diego Sifuentes", "Matthew Hung", "Blake Fredericks", "Ramon Figueroa",
+    "Nihitha Datla", "Makena Level", "Cole Edmonston", "Jacob Lemmons",
+    "Chiara DeGirolamo", "Alexander Otis", "Murtaza Bootwala", "Cecilia Gonenne",
+    "Chelsea Roffey", "Alexandra Tribble", "David Hervy"
+  ],
   "diversity_dimensions": [
     "business", "design", "marketing", "agriculture", "life sciences", "health", "education", "sports", "creative work", "community projects", "engineering", "software", "hardware"
   ],
